@@ -1,0 +1,48 @@
+.block-under-banner {
+  margin-bottom: 120px;
+
+  @include w860 {
+    margin-bottom: 80px;
+  }
+
+  &__destop {
+    gap: 40px;
+
+    @include widthPage;
+
+    @extend %margCenter;
+    @extend %flexStartBetwin;
+
+    @include w860 {
+      display: none;
+    }
+  }
+
+  &__mob {
+    display: none;
+    flex-direction: column;
+
+    @include w860 {
+      display: flex;
+    }
+  }
+
+  &__wrp-block {
+    max-width: 580px;
+    width: 100%;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__wrp-block-mob {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &__img-mob {
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+}

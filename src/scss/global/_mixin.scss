@@ -1,0 +1,161 @@
+%marginCenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%flexCentBetwin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%flexWrapSpaseBetwin {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+%flexStartBetwin {
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+}
+
+%flexCent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flexStartJus {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+%flexColumCentre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+%flexColum {
+  display: flex;
+  flex-direction: column;
+}
+
+%flexColumStart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+%positionCentereAbsolute {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+%margCenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin set-item-count-in-row($count) {
+  width: calc(
+    (100% - #{($count - 1)} * #{$product-gallery-margin}) / #{$count}
+  );
+}
+
+@mixin widthPage {
+  max-width: $width-page;
+  width: 100%;
+
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+
+  @include w860 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@mixin w1500 {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin w1260 {
+  @media (max-width: 1260px) {
+    @content;
+  }
+}
+
+@mixin w1076 {
+  @media (max-width: 1076px) {
+    @content;
+  }
+}
+
+@mixin w860 {
+  @media (max-width: 860px) {
+    @content;
+  }
+}
+
+@mixin w620 {
+  @media (max-width: 620px) {
+    @content;
+  }
+}
+
+.overlay {
+  transition: 0.2s;
+
+  &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+
+    transition: 0.2s;
+
+    @include w620 {
+      background-color: #00000000;
+    }
+  }
+}
+
+.modal {
+  transition: 0.2s;
+
+  &.active {
+    max-width: 600px;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+    transition: 0.2s;
+
+    @include w620 {
+      max-width: none;
+      height: 100vh;
+
+      border-radius: 0;
+    }
+  }
+}

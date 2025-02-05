@@ -1,0 +1,135 @@
+.feedback {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(
+      90deg,
+      rgba(73, 163, 158, 0.42) 0%,
+      rgba(73, 163, 158, 0.12) 100%
+    ),
+    url("/public/img/feedbock-img.png");
+  background-size: cover;
+  background-position: center;
+
+  &__wrp {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    gap: 40px;
+
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--color-wihte);
+
+    @include widthPage;
+    @extend %margCenter;
+    @extend %flexCentBetwin;
+
+    @include w860 {
+      gap: 84px;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    margin-bottom: 80px;
+
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 130%;
+
+    @include w860 {
+      margin-bottom: 20px;
+      flex-direction: column;
+
+      font-size: 30px;
+    }
+  }
+
+  &__sub-title {
+    max-width: 566px;
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 130%;
+
+    @include w860 {
+      gap: 84px;
+      flex-direction: column;
+
+      font-size: 20px;
+    }
+  }
+
+  &__form {
+    max-width: 580px;
+    width: 100%;
+
+    @include w860 {
+      max-width: 100%;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+
+    border-bottom: 1px solid var(--color-wihte);
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+
+    color: var(--color-wihte);
+
+    &::placeholder {
+      margin-bottom: 14px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 130%;
+
+      color: var(--color-wihte);
+    }
+  }
+
+  &__input + &__input {
+    margin-top: 40px;
+  }
+
+  &__wrp-cont {
+    width: 100%;
+  }
+
+  &__agreement-text {
+    margin-bottom: 46px;
+    padding-top: 16px;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: none;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 71px;
+
+    gap: 16px;
+
+    color: var(--color-wihte);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39.01px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @extend %flexCent;
+
+    @include w860 {
+      font-size: 20px;
+    }
+  }
+}

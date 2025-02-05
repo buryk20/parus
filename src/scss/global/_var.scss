@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+$font-main: "Montserrat", serif;
+$font-cormorant: "Cormorant", serif;
+
+$width-page: 1232px;
+
+$side-padding: 16px;
+
+$product-gallery-margin: 16px;
+
+:root {
+  --color-grey: #2c2c2c;
+  --color-main-active: #49a39e;
+  --color-navy: #001f3d;
+  --color-navy-40: #001f3d66;
+
+  --color-wihte: #ffffff;
+
+  --screen-height: 690px;
+  --screen-width: 100%;
+
+  --height-out-advance-block: 100%;
+  --height-item-faq: 0;
+  --height-item-faq-title: 0;
+  --height-item-servic-mob: 0;
+
+  --swiper-pagination-bottom: -3px;
+}

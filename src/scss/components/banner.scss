@@ -1,0 +1,120 @@
+.banner {
+  margin-bottom: 50px;
+
+  display: grid;
+  grid-template-columns: 1.6fr 1.4fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  gap: 48px;
+
+  @include w1076 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include w860 {
+    gap: 16px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include w860 {
+      font-size: 30px;
+    }
+  }
+
+  &__img-wrp {
+    width: 100%;
+    height: 702px;
+
+    overflow: hidden;
+
+    @include w1076 {
+      height: 359px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    display: flex;
+    object-fit: cover;
+
+    @include w1500 {
+      width: 724px;
+      height: 702px;
+    }
+
+    @include w1076 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text-wrp {
+    padding-top: 80px;
+    padding-left: 16px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    @include w1076 {
+      padding-top: 30px;
+      padding-right: 16px;
+    }
+  }
+
+  &__text {
+    max-width: 624px;
+
+    @include w1076 {
+      max-width: 100%;
+    }
+  }
+
+  &__text-style {
+    margin-bottom: 40px;
+
+    font-size: 30px;
+    line-height: 130%;
+
+    @include w860 {
+      margin-bottom: 20px;
+
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    max-width: 580px;
+    width: 100%;
+    height: 70px;
+
+    gap: 16px;
+    margin-bottom: 13px;
+
+    color: var(--color-wihte);
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    @include w860 {
+      height: 56px;
+
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+  }
+
+  &__text-consyl {
+    font-size: 27px;
+    line-height: 130%;
+
+    @include w860 {
+      font-size: 14px;
+    }
+  }
+}

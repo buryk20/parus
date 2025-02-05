@@ -1,0 +1,36 @@
+.alert {
+  position: fixed;
+
+  top: 48px;
+  right: -100%;
+
+  padding: 10px 24px;
+
+  background-color: var(--color-wihte);
+  border-radius: 16px;
+  border: 3px solid var(--color-main-active);
+
+  z-index: 9999999999;
+
+  font-size: 32px;
+  line-height: 130%;
+  transition: top, 0.3s;
+
+  &.active {
+    right: 48px;
+
+    transition: 0.3s;
+  }
+
+  @include w860 {
+    font-size: 24px;
+
+    top: 16px;
+
+    &.active {
+      right: 16px;
+
+      transition: 0.3s;
+    }
+  }
+}

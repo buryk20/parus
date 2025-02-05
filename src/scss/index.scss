@@ -1,0 +1,16 @@
+//Global
+@import "./global/var.scss";
+@import "./global/mixin";
+@import "./global/normalize";
+@import "./global/global";
+
+//Partials
+@import "./partials/header.scss";
+
+//Components
+@import "./components/banner.scss";
+@import "./components/block-under-banner.scss";
+@import "./components/tour.scss";
+@import "./components/why-choose.scss";
+@import "./components/feedback.scss";
+@import "./components/alert.scss";

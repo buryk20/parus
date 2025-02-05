@@ -1,0 +1,40 @@
+.tour {
+  margin-bottom: 120px;
+
+  @include w860 {
+    margin-bottom: 80px;
+  }
+
+  &__title-wrp {
+    @include widthPage;
+    @extend %margCenter;
+  }
+
+  & .title {
+    margin-bottom: 50px;
+
+    @include w860 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__img-wrp {
+    width: 100%;
+    height: 900px;
+
+    overflow: hidden;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    @include w860 {
+      height: 616px;
+    }
+  }
+}
