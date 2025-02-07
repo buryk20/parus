@@ -7,10 +7,12 @@ $width-page: 1232px;
 
 $side-padding: 16px;
 
-$product-gallery-margin: 16px;
+$product-gallery-margin: 24px;
 
 :root {
   --color-grey: #2c2c2c;
+  --color-grey-70: #c3c3c3;
+  --color-grey-50: #f0f0f0;
   --color-main-active: #49a39e;
   --color-navy: #001f3d;
   --color-navy-40: #001f3d66;
@@ -26,4 +28,7 @@ $product-gallery-margin: 16px;
   --height-item-servic-mob: 0;
 
   --swiper-pagination-bottom: -3px;
+
+  --height-planning: 0;
+  --height-planning-active: 0;
 }

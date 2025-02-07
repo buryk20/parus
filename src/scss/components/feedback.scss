@@ -1,4 +1,6 @@
 .feedback {
+  margin-bottom: 120px;
+
   background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0) 0%,
@@ -13,6 +15,10 @@
     url("/public/img/feedbock-img.png");
   background-size: cover;
   background-position: center;
+
+  @include w860 {
+    margin-bottom: 80px;
+  }
 
   &__wrp {
     padding-top: 50px;

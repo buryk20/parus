@@ -45,6 +45,8 @@ $devMode = @file_get_contents($viteServer . '/@vite/client') !== false;
         <?php require_once('views/components/tour.php'); ?>
         <?php require_once('views/components/why-choose.php'); ?>
         <?php require_once('views/components/feedback.php'); ?>
+        <?php require_once('views/components/planning.php'); ?>
+        <?php require_once('views/components/about-project.php'); ?>
     </main>
     <div data-alert class="alert">
         <p>

@@ -63,10 +63,24 @@
   margin-right: auto;
 }
 
-@mixin set-item-count-in-row($count) {
-  width: calc(
-    (100% - #{($count - 1)} * #{$product-gallery-margin}) / #{$count}
+@mixin set-cart-count-in-row($count) {
+  flex-basis: calc(
+    (100% - (#{$count - 1} * #{$product-gallery-margin})) / #{$count}
   );
+  max-width: calc(
+    (100% - (#{$count - 1} * #{$product-gallery-margin})) / #{$count}
+  );
+  min-width: calc(
+    (100% - (#{$count - 1} * #{$product-gallery-margin})) / #{$count}
+  );
+}
+
+@mixin set-cart-count-in-row-mar($count) {
+  $gap: 1%; // Пример отступов между элементами (можно заменить)
+
+  flex-basis: calc((100% - (($count - 1) * #{$gap})) / #{$count});
+  max-width: calc((100% - (($count - 1) * #{$gap})) / #{$count});
+  min-width: calc((100% - (($count - 1) * #{$gap})) / #{$count});
 }
 
 @mixin widthPage {

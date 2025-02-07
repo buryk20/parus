@@ -1,0 +1,149 @@
+.planning {
+  margin-bottom: 120px;
+  @include widthPage;
+  @extend %margCenter;
+
+  @include w860 {
+    margin-bottom: 80px;
+  }
+
+  & .title {
+    margin-bottom: 20px;
+
+    @include w860 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    height: 37px;
+
+    padding: 10px 17px;
+
+    gap: 4px;
+
+    color: var(--color-wihte);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+
+    @extend %flexCent;
+
+    @include w860 {
+      padding: 6px 12px;
+      font-size: 8px;
+    }
+  }
+
+  &__btn-icon {
+    width: 30px;
+    @include w860 {
+      width: 18px;
+    }
+  }
+
+  &__list {
+    max-width: 100%;
+
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    gap: 24px;
+  }
+
+  &__wrp-list {
+    height: var(--height-planning);
+
+    margin-bottom: 59px;
+
+    overflow: hidden;
+    transition: height, 0.3s;
+
+    &.active {
+      height: var(--height-planning-active);
+      transition: height, 0.3s;
+    }
+
+    @include w860 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    max-width: 282px;
+    min-width: 282px;
+    // width: 40%;
+    height: auto;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+
+    background-color: var(--color-grey-50);
+
+    @include set-cart-count-in-row(4);
+
+    @include w860 {
+      @include set-cart-count-in-row(3);
+      padding: 10px;
+    }
+
+    @include w620 {
+      @include set-cart-count-in-row(2);
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+  }
+
+  &__btn-open {
+    width: 100%;
+
+    gap: 12px;
+
+    color: var(--color-wihte);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    @include w860 {
+      padding: 8px 12px;
+      gap: 4px;
+
+      font-size: 20px;
+    }
+  }
+
+  &__btn-open-icon {
+    @include w860 {
+      width: 32px;
+    }
+  }
+}

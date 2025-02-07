@@ -5,3 +5,6 @@ header();
 
 import { form } from "./components/form";
 form();
+
+import { planning } from "./components/planning";
+planning();
