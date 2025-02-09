@@ -1,36 +1,51 @@
 <?php
-$data = [
-    [
+$data = array(
+    array(
         'img' => '/public/img/specificarions/item_1.svg',
         'title' => 'Тип будівлі:',
         'text' => 'монолітно-каркасний'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/specificarions/item_2.svg',
         'title' => 'Матеріали стін:',
         'text' => 'керамічний блок, міжкімнатна звукоізоляція керамзитобетонним блоком'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/specificarions/item_3.svg',
         'title' => 'Опалення',
         'text' => 'індивідуальне газове'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/specificarions/item_4.svg',
         'title' => 'Вентиляція:',
         'text' => 'приточно-витяжна'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/specificarions/item_5.svg',
         'title' => 'Ліфти:',
         'text' => 'пасажирські - 2 шт., вантажні - 2 шт'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/specificarions/item_6.svg',
         'title' => 'Інтернет:',
         'text' => 'високошвидкісний'
-    ]
-];
+    )
+);
+
+$dataSpecs = array(
+    array(
+        'title' => '2700 мм',
+        'text' => 'Висота стель'
+    ),
+    array(
+        'title' => '10',
+        'text' => 'Кількість поверхів'
+    ),
+    array(
+        'title' => '72 шт',
+        'text' => 'Паркомісць у підземному паркінгу'
+    )
+);
 ?>
 
 <section class="about-project">
@@ -125,7 +140,7 @@ $data = [
             </div>
         </div>
         <span class="line"></span>
-        <h4 class="sub-title">
+        <h4 class="sub-title about-project__title">
             Технічні характеристики:
         </h4>
         <div class="about-project__specif-list">
@@ -136,6 +151,18 @@ $data = [
                         <?= $item['title'] ?>
                     </p>
                     <p class="about-project__specif-item-text">
+                        <?= $item['text'] ?>
+                    </p>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        <div class="about-project__specif-list">
+            <?php foreach ($dataSpecs as $item): ?>
+                <div class="about-project__specif-item">
+                    <p class="about-project__title-style">
+                        <?= $item['title'] ?>
+                    </p>
+                    <p class="about-project__specif-item-title">
                         <?= $item['text'] ?>
                     </p>
                 </div>

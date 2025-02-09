@@ -34,6 +34,8 @@
   }
 
   &__specif-item {
+    width: 100%;
+
     padding: 12px;
     @include set-cart-count-in-row-mar(3);
 
@@ -78,6 +80,10 @@
       &:nth-child(6) {
         border: none;
       }
+
+      &:last-child {
+        border: none;
+      }
     }
   }
 
@@ -86,9 +92,12 @@
   }
 
   &__specif-item-title {
+    width: 100%;
+
     margin-bottom: 10px;
 
     font-weight: 700;
+    text-align: center;
   }
 
   &__specif-list {
@@ -104,5 +113,32 @@
 
   &__specif-item-text {
     text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include w860 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title-style {
+    margin-bottom: 16px;
+
+    font-size: 60px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--color-main-active);
+    text-align: center;
+
+    @include w860 {
+      font-size: 30px;
+    }
+  }
+
+  &__specif-list + &__specif-list {
+    margin-top: 40px;
   }
 }

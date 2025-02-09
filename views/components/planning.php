@@ -1,41 +1,41 @@
 <?php
-$plans = [
-    [
+$plans = array(
+    array(
         'img' => '/public/img/planning/item_1.png',
         'title' => '1 кiмнатна / 42 м2',
         'text' => 'поверх 1, кв 1'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/planning/item_2.png',
         'title' => '2 кiмнатна / 58 м2',
         'text' => 'поверх 1, кв 2'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/planning/item_3.png',
         'title' => '1 кiмнатна / 41 м2',
         'text' => 'поверх 1, кв 3'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/planning/item_4.png',
         'title' => '1 кiмнатна / 39 м2',
         'text' => 'поверх 1, кв 5'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/planning/item_5.png',
         'title' => '1 кiмнатна / 41 м2',
         'text' => 'поверх 1, кв 6'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/planning/item_6.png',
         'title' => '1 кiмнатна / 42 м2',
         'text' => 'поверх 1, кв 7'
-    ],
-    [
+    ),
+    array(
         'img' => '/public/img/planning/item_7.png',
         'title' => '2 кiмнатна / 62 м2',
         'text' => 'поверх 1, кв 8'
-    ],
-];
+    ),
+);
 ?>
 
 <section data-planning class="planning">
