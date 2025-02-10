@@ -135,3 +135,14 @@
     line-height: 26px;
   }
 }
+
+.btn-white {
+  padding: 10px 30px;
+
+  color: var(--color-main-active);
+  font-family: Montserrat;
+  font-size: 40px;
+  line-height: 130%;
+
+  background-color: var(--color-wihte);
+}

@@ -135,34 +135,43 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--color-wihte-50);
     backdrop-filter: blur(5px);
     z-index: 999;
 
     transition: 0.2s;
 
     @include w620 {
-      background-color: #00000000;
+      background-color: var(--color-wihte-50);
     }
   }
 }
 
 .modal {
+  max-width: 600px;
+  width: 100%;
+
+  padding: 20px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background-color: white;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+
   transition: 0.2s;
 
   &.active {
-    max-width: 600px;
-    width: 100%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-
+    opacity: 1;
+    visibility: initial;
     transition: 0.2s;
 
     @include w620 {

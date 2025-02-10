@@ -1,7 +1,5 @@
 export let header = function() {
     const header = document.querySelector('[data-header]');
-    console.log(header);
-    
 
     if(header) {
         const menuBtn = header.querySelector('[data-menu-btn]');

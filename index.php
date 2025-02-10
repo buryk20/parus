@@ -44,16 +44,36 @@ $devMode = @file_get_contents($viteServer . '/@vite/client') !== false;
         <?php require_once('views/components/block-under-banner.php'); ?>
         <?php require_once('views/components/tour.php'); ?>
         <?php require_once('views/components/why-choose.php'); ?>
-        <?php require_once('views/components/feedback.php'); ?>
+        <?php
+        $data = ['title' => "<p> Ціни </p> від 760$ за м2!", 'text' => 'Це ваша можливість інвестувати в комфортне житло за доступною ціною'];
+        extract($data);
+        require('views/components/feedback.php');
+        ?>
         <?php require_once('views/components/planning.php'); ?>
         <?php require_once('views/components/about-project.php'); ?>
+        <?php require_once('views/components/separator.php'); ?>
+        <?php
+        $data = ['title' => "Безвідсоткова розстрочка </br> до 12 місяців!", 'text' => 'Оберіть найбільш зручний для вас варіант оплати'];
+        extract($data);
+        require('views/components/feedback.php');
+        ?>
     </main>
-    <div data-alert class="alert">
-        <p>
-            Повідомлення надіслано
-        </p>
+    <div data-alert-wrp class="overlay">
+        <div data-alert class="modal alert">
+            <div data-alert-btn-close class="alert__btn-close">
+                <span class="alert__btn-close-t"></span>
+                <span class="alert__btn-close-b"></span>
+            </div>
+            <p class="title alert__title">
+                Дякуємо!</br>
+                Ваші дані отримано.
+            </p>
+            <p class="alert__text">
+                Ми зв'яжемось з вами найближчим часом
+            </p>
+            <a class="btn-white" href="tel:+380957005055">+380 95 700 50 55</a>
+        </div>
     </div>
-
 </body>
 
 </html>

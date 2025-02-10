@@ -1,0 +1,39 @@
+.separator {
+  margin-bottom: 120px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: var(--color-main-active);
+
+  @include w860 {
+    margin-bottom: 80px;
+  }
+
+  & .sub-title,
+  & .main-style-text {
+    color: var(--color-wihte);
+  }
+
+  & .main-style-text {
+    max-width: 544px;
+    width: 100%;
+  }
+
+  & .main-style-text > p {
+    text-align: left;
+  }
+
+  &__wrp {
+    gap: 30px;
+
+    @include widthPage;
+    @extend %margCenter;
+    @extend %flexStartBetwin;
+
+    @include w620 {
+      gap: 10px;
+
+      flex-direction: column;
+    }
+  }
+}
