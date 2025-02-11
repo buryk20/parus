@@ -8,3 +8,6 @@ form();
 
 import { planning } from "./components/planning";
 planning();
+
+import { buy } from "./components/buy";
+buy();

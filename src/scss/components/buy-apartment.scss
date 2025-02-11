@@ -1,0 +1,37 @@
+.buy-apartment {
+  margin-bottom: 120px;
+  @include widthPage;
+  @extend %margCenter;
+
+  @include w860 {
+    margin-bottom: 80px;
+  }
+
+  & .title {
+    margin-bottom: 20px;
+  }
+
+  &__text-wrp {
+    padding-top: 24px;
+  }
+
+  & .caps {
+    text-transform: uppercase;
+  }
+
+  &__text-active {
+    height: var(--height-text-active);
+
+    margin-bottom: 30px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    &.active {
+      height: var(--height-text);
+
+      transition: 0.3s;
+    }
+  }
+}

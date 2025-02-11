@@ -1,0 +1,66 @@
+.green-block {
+  background-color: var(--color-main-active);
+
+  &__wrp {
+    margin-bottom: 120px;
+    @include widthPage;
+    @extend %margCenter;
+    @extend %flexStartBetwin;
+    align-items: stretch;
+
+    @include w860 {
+      margin-bottom: 80px;
+    }
+
+    @include w1076 {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  & .sub-title {
+    color: var(--color-wihte);
+  }
+
+  & .main-style-text {
+    color: var(--color-wihte);
+  }
+
+  &__item {
+    // max-width: 380px;
+    width: 100%;
+    height: auto;
+
+    padding: 60px 40px;
+
+    &:nth-child(1) {
+      padding-left: 0;
+
+      @include w1076 {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: var(--color-main-active-50);
+    }
+
+    &:nth-child(3) {
+      min-width: 430px;
+      padding-right: 0;
+
+      @include w1076 {
+        min-width: 10px;
+
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
+    @include w1076 {
+      padding: 30px 20px;
+    }
+  }
+}

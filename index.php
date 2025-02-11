@@ -57,6 +57,9 @@ $devMode = @file_get_contents($viteServer . '/@vite/client') !== false;
         extract($data);
         require('views/components/feedback.php');
         ?>
+        <?php require_once('views/components/life.php'); ?>
+        <?php require_once('views/components/green-block.php'); ?>
+        <?php require_once('views/components/buy-apartment.php'); ?>
     </main>
     <div data-alert-wrp class="overlay">
         <div data-alert class="modal alert">
