@@ -12,18 +12,14 @@ export let buy = function() {
         let heightTextActive = textActive.getBoundingClientRect().height;
         let heightText = text.getBoundingClientRect().height;
 
-        let computedStyle = getComputedStyle(text);
-        let marginTop = parseFloat(computedStyle.marginTop);
-        let marginBottom = parseFloat(computedStyle.marginBottom);
-
-        console.log(heightText, heightTextActive, marginTop, marginBottom);
+        console.log(heightText, heightTextActive);
         
 
         textWrp.style.setProperty('--height-text-active', heightTextActive + 'px');
         
         btn.addEventListener('click', () => {
             textWrp.classList.toggle('active');
-            textWrp.style.setProperty('--height-text', (heightTextActive + heightText + (16 * paragraphs.length) + (9 * 16)) + 'px');
+            textWrp.style.setProperty('--height-text', (heightTextActive + heightText + (16 * paragraphs.length) + (13 * 16)) + 'px');
 
             if(btnText.innerText === "ЧИТАТИ ДАЛI") {
                 btnText.innerText = "Згорнути"; 

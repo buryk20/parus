@@ -11,3 +11,6 @@ planning();
 
 import { buy } from "./components/buy";
 buy();
+
+import { openForm } from "./components/open-form";
+openForm();

@@ -60,7 +60,9 @@ $devMode = @file_get_contents($viteServer . '/@vite/client') !== false;
         <?php require_once('views/components/life.php'); ?>
         <?php require_once('views/components/green-block.php'); ?>
         <?php require_once('views/components/buy-apartment.php'); ?>
+        <?php require_once('views/components/open-form.php'); ?>
     </main>
+    <?php require_once('views/partials/footer.php'); ?>
     <div data-alert-wrp class="overlay">
         <div data-alert class="modal alert">
             <div data-alert-btn-close class="alert__btn-close">

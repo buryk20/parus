@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // Получаем данные из формы
 $name = isset($_POST['name']) ? $_POST['name'] : null;
 $phone = isset($_POST['phone']) ? $_POST['phone'] : null;
+$email = isset($_POST['email']) && !empty($_POST['email']) ? $_POST['email'] : null;
 
 if (!$name || !$phone) {
     http_response_code(400);
@@ -26,6 +27,11 @@ if (!$name || !$phone) {
 $message = "📩 *Нова заявка:*\n\n"
     . "👤 *Ім'я:* " . $name . "\n"
     . "📞 *Телефон:* " . $phone;
+
+// Добавляем email, если он передан
+if ($email) {
+    $message .= "\n📧 *Email:* " . $email;
+}
 
 $telegram_url = "https://api.telegram.org/bot" . $token . "/sendMessage";
 $params = array(
@@ -39,6 +45,6 @@ $response = file_get_contents($telegram_url . '?' . http_build_query($params));
 
 echo json_encode(array(
     'message' => 'Form successfully submitted!',
-    'data' => array('name' => $name, 'phone' => $phone),
+    'data' => array('name' => $name, 'phone' => $phone, 'email' => $email),
     'telegram_response' => json_decode($response, true),
 ));

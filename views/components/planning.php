@@ -38,7 +38,7 @@ $plans = array(
 );
 ?>
 
-<section data-planning class="planning">
+<section data-planning id="planning" class="planning">
     <h3 class="title">Планування</h3>
     <span class="line"></span>
     <div data-planning-list-wrp class="planning__wrp-list">

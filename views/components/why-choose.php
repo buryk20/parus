@@ -1,4 +1,4 @@
-<section class="why-choose">
+<section id="why-choose" class="why-choose">
     <h2 class="title">
         Чому варто обирати ЖК «Парус»
     </h2>

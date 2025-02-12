@@ -1,4 +1,4 @@
-<section class="life">
+<section id="life" class="life">
     <h3 class="title">
         Життя в «Парусі».</br>
         Кожна деталь для вас:

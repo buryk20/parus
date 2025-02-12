@@ -48,7 +48,7 @@ $dataSpecs = array(
 );
 ?>
 
-<section class="about-project">
+<section id="about-project" class="about-project">
     <h3 class="title">
         Про проект
     </h3>
