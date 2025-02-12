@@ -16,6 +16,7 @@
     padding-bottom: 8px;
 
     font-size: 16px;
+    white-space: nowrap;
   }
 
   &__nav {
@@ -24,11 +25,49 @@
 
   &__wrp-cont {
     @extend %flexStartBetwin;
+
+    @include w860 {
+      gap: 30px;
+
+      flex-direction: column;
+    }
   }
 
   &__social-wrp {
     gap: 50px;
 
     @extend %flexStartBetwin;
+  }
+
+  &__tel {
+    font-size: 21px;
+    white-space: nowrap;
+  }
+
+  &__map-text {
+    display: flex;
+
+    &:last-of-type {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__map-text + &__map-text {
+    margin-top: 4px;
+  }
+
+  &__wrp-info {
+    width: 74%;
+
+    gap: 16px;
+    @extend %flexStartBetwin;
+
+    @include w1076 {
+      width: 88%;
+    }
+
+    @include w860 {
+      flex-direction: column-reverse;
+    }
   }
 }
