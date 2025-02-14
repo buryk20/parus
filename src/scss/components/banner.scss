@@ -101,6 +101,10 @@
     font-size: 32px;
     text-transform: uppercase;
 
+    @include w1076 {
+      max-width: 100%;
+    }
+
     @include w860 {
       height: 56px;
 

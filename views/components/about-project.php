@@ -102,7 +102,7 @@ $dataSpecs = array(
             </div>
         </div>
         <span class="line"></span>
-        <h4 class="sub-title">
+        <h4 id="infrastructure-and-comfort" class="sub-title">
             Інноваційні рішення для комфортного життя:
         </h4>
         <div class="main-style-text about-project__wrp-text">

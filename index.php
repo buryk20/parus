@@ -36,7 +36,7 @@ $devMode = @file_get_contents($viteServer . '/@vite/client') !== false;
 
 <body>
     <?php require_once('views/partials/header.php'); ?>
-    <main>
+    <main class="main">
         <?php require_once('views/components/banner.php'); ?>
         <div class="line__wrp">
             <span class="line"></span>
@@ -45,7 +45,7 @@ $devMode = @file_get_contents($viteServer . '/@vite/client') !== false;
         <?php require_once('views/components/tour.php'); ?>
         <?php require_once('views/components/why-choose.php'); ?>
         <?php
-        $data = ['title' => "<p> Ціни </p> від 760$ за м2!", 'text' => 'Це ваша можливість інвестувати в комфортне житло за доступною ціною'];
+        $data = array('title' => "<p> Ціни </p> від 760$ за м2!", 'text' => 'Це ваша можливість інвестувати в комфортне житло за доступною ціною');
         extract($data);
         require('views/components/feedback.php');
         ?>
@@ -53,7 +53,10 @@ $devMode = @file_get_contents($viteServer . '/@vite/client') !== false;
         <?php require_once('views/components/about-project.php'); ?>
         <?php require_once('views/components/separator.php'); ?>
         <?php
-        $data = ['title' => "Безвідсоткова розстрочка </br> до 12 місяців!", 'text' => 'Оберіть найбільш зручний для вас варіант оплати'];
+        $data = array(
+            'title' => "Безвідсоткова розстрочка </br> до 12 місяців!",
+            'text' => 'Оберіть найбільш зручний для вас варіант оплати'
+        );
         extract($data);
         require('views/components/feedback.php');
         ?>

@@ -7,9 +7,9 @@
                     <a class="footer__nav-item" href="#about-project">Про комплекс</a>
                     <a class="footer__nav-item" href="#why-choose">Переваги</a>
                     <a class="footer__nav-item" href="#planning">Планування</a>
-                    <a class="footer__nav-item" href="#">Інфраструктура та комфорт</a>
+                    <a class="footer__nav-item" href="#infrastructure-and-comfort">Інфраструктура та комфорт</a>
                     <a class="footer__nav-item" href="#life">Галерея</a>
-                    <a class="footer__nav-item" href="#">Консультація
+                    <a class="footer__nav-item" href="#advice">Консультація
                     </a>
                 </div>
                 <div class="footer__social-wrp">

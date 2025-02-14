@@ -1,4 +1,4 @@
-<section class="open-form">
+<section id="advice" class="open-form">
     <span class="line"></span>
     <div class="open-form__wrp">
         <div>

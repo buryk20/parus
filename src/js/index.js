@@ -14,3 +14,6 @@ buy();
 
 import { openForm } from "./components/open-form";
 openForm();
+
+import { anchorScroll  } from "./global/anchorScroll";
+anchorScroll();
