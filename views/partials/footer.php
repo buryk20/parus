@@ -4,7 +4,7 @@
             <img src="/public/img/footer-logo.svg" alt="footer logo">
             <div class="footer__wrp-info">
                 <div class="footer__nav">
-                    <a class="footer__nav-item" href="#about-project">Про комплекс</a>
+                    <a class="footer__nav-item" href="#about-complex">Про комплекс</a>
                     <a class="footer__nav-item" href="#why-choose">Переваги</a>
                     <a class="footer__nav-item" href="#planning">Планування</a>
                     <a class="footer__nav-item" href="#infrastructure-and-comfort">Інфраструктура та комфорт</a>

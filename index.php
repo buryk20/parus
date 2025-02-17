@@ -1,6 +1,26 @@
 <?php
 $viteServer = 'http://127.0.0.1:5173';
 $devMode = @file_get_contents($viteServer . '/@vite/client') !== false;
+
+// Путь к манифесту
+$manifestPath = __DIR__ . '/public/assets/.vite/manifest.json';
+
+// Загружаем данные из манифеста (если в продакшене)
+$manifest = [];
+if (!$devMode && file_exists($manifestPath)) {
+    $manifest = json_decode(file_get_contents($manifestPath), true);
+}
+
+// Функция для получения пути к файлу из манифеста
+function assetPath($entry)
+{
+    global $manifest;
+    return isset($manifest[$entry]['file']) ? $manifest[$entry]['file'] : $entry;
+}
+
+$jsFile = assetPath('src/js/index.js');
+$cssFile = isset($manifest['src/js/index.js']['css'][0]) ? $manifest['src/js/index.js']['css'][0] : null;
+
 ?>
 
 <!DOCTYPE html>
@@ -28,10 +48,13 @@ $devMode = @file_get_contents($viteServer . '/@vite/client') !== false;
         <script type="module" src="<?= $viteServer ?>/@vite/client"></script>
         <script type="module" src="<?= $viteServer ?>/src/js/index.js"></script>
     <?php else: ?>
-        <link rel="stylesheet" href="/public/assets/index.css">
-        <script src="/public/assets/index.js" defer></script>
+        <?php if ($cssFile): ?>
+            <link rel="stylesheet" href="/public/assets/<?= $cssFile ?>">
+        <?php endif; ?>
+        <?php if ($jsFile): ?>
+            <script src="/public/assets/<?= $jsFile ?>" defer></script>
+        <?php endif; ?>
     <?php endif; ?>
-
 </head>
 
 <body>

@@ -1,4 +1,4 @@
-<div class="banner">
+<div id="about-complex" class="banner">
     <div class="banner__text-wrp">
         <div class="banner__text">
             <h1 class="banner__title title">

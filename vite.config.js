@@ -9,6 +9,7 @@ export default defineConfig({
   build: {
     outDir: 'public/assets',
     emptyOutDir: true,
+    manifest: true,
     rollupOptions: {
       input: 'src/js/index.js'
     }

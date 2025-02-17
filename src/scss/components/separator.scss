@@ -1,13 +1,8 @@
 .separator {
-  margin-bottom: 120px;
   padding-top: 30px;
   padding-bottom: 30px;
 
   background-color: var(--color-main-active);
-
-  @include w860 {
-    margin-bottom: 80px;
-  }
 
   & .sub-title,
   & .main-style-text {
@@ -15,7 +10,6 @@
   }
 
   & .main-style-text {
-    max-width: 544px;
     width: 100%;
   }
 
@@ -23,15 +17,20 @@
     text-align: left;
   }
 
+  & .title {
+    color: var(--color-wihte);
+  }
+
   &__wrp {
-    gap: 30px;
+    gap: 5px;
 
     @include widthPage;
     @extend %margCenter;
     @extend %flexStartBetwin;
+    flex-direction: column;
 
     @include w620 {
-      gap: 10px;
+      // gap: 10px;
 
       flex-direction: column;
     }

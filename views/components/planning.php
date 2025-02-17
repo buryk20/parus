@@ -7,32 +7,32 @@ $plans = array(
     ),
     array(
         'img' => '/public/img/planning/item_2.png',
-        'title' => '2 кiмнатна / 58 м2',
+        'title' => '2 кiмнатна / 63 м2',
         'text' => 'поверх 1, кв 2'
     ),
     array(
         'img' => '/public/img/planning/item_3.png',
-        'title' => '1 кiмнатна / 41 м2',
+        'title' => '1 кiмнатна / 44,6 м2',
         'text' => 'поверх 1, кв 3'
     ),
     array(
         'img' => '/public/img/planning/item_4.png',
-        'title' => '1 кiмнатна / 39 м2',
+        'title' => '1 кiмнатна / 41,4 м2',
         'text' => 'поверх 1, кв 5'
     ),
     array(
         'img' => '/public/img/planning/item_5.png',
-        'title' => '1 кiмнатна / 41 м2',
+        'title' => '1 кiмнатна / 43,4 м2',
         'text' => 'поверх 1, кв 6'
     ),
     array(
         'img' => '/public/img/planning/item_6.png',
-        'title' => '1 кiмнатна / 42 м2',
+        'title' => '1 кiмнатна / 45 м2',
         'text' => 'поверх 1, кв 7'
     ),
     array(
         'img' => '/public/img/planning/item_7.png',
-        'title' => '2 кiмнатна / 62 м2',
+        'title' => '2 кiмнатна / 64 м2',
         'text' => 'поверх 1, кв 8'
     ),
 );
@@ -53,10 +53,10 @@ $plans = array(
                         <p class="planning__text">
                             <?= $plan['text'] ?>
                         </p>
-                        <button class="btn planning__btn">
+                        <a href="https://t.me/+380957005055" target="_blank" class="btn planning__btn">
                             <p>дізнатися вартість</p>
                             <img class="planning__btn-icon" src="/public/icon/arrow.svg" alt="Зателефонуйте +380 95 700 50 55">
-                        </button>
+                        </a>
                     </div>
                 </div>
             <?php endforeach; ?>

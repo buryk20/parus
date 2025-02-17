@@ -1,8 +1,8 @@
 <section class="separator">
     <div class="separator__wrp">
-        <div class="sub-title">
+        <div class="title">
             <p>
-                Будівництво,</br> що вражає:
+                Будівництво, що вражає:
             </p>
         </div>
         <div class="main-style-text">

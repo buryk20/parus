@@ -1,0 +1,18 @@
+{
+  "public/img/feedbock-img.png": {
+    "file": "assets/feedbock-img-Cxn6tdZB.png",
+    "src": "public/img/feedbock-img.png"
+  },
+  "src/js/index.js": {
+    "file": "assets/index-B4Xh5Xmv.js",
+    "name": "index",
+    "src": "src/js/index.js",
+    "isEntry": true,
+    "css": [
+      "assets/index-DBrBO7qF.css"
+    ],
+    "assets": [
+      "assets/feedbock-img-Cxn6tdZB.png"
+    ]
+  }
+}

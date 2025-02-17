@@ -7,7 +7,7 @@
                 <span class="header__menu-line-b"></span>
             </div>
         </div>
-        <img class="header__logo" src="/public/img/logo-header.png" alt="Логотип Парус">
+        <img class="header__logo" src="/public/img/logo-header.svg" alt="Логотип Парус">
         <div data-nav class="header__nav-wrp">
             <div class="header__nav">
                 <div class="header__menu-logo-wrp">
@@ -20,7 +20,7 @@
                 </div>
                 <ul class="header__nav-list">
                     <li class="header__item">
-                        <a data-anchor href="#about-project">Про комплекс</a>
+                        <a data-anchor href="#about-complex">Про комплекс</a>
                     </li>
                     <li class="header__item">
                         <a data-anchor href="#why-choose">Переваги</a>
