@@ -68,7 +68,10 @@ $cssFile = isset($manifest['src/js/index.js']['css'][0]) ? $manifest['src/js/ind
         <?php require_once('views/components/tour.php'); ?>
         <?php require_once('views/components/why-choose.php'); ?>
         <?php
-        $data = array('title' => "<p> Ціни </p> від 760$ за м2!", 'text' => 'Це ваша можливість інвестувати в комфортне житло за доступною ціною');
+        $data = array(
+            'title' => "Ціни</br> від 760$ за м2!",
+            'text' => 'Це ваша можливість інвестувати в комфортне житло за доступною ціною'
+        );
         extract($data);
         require('views/components/feedback.php');
         ?>
@@ -77,8 +80,10 @@ $cssFile = isset($manifest['src/js/index.js']['css'][0]) ? $manifest['src/js/ind
         <?php require_once('views/components/separator.php'); ?>
         <?php
         $data = array(
-            'title' => "Безвідсоткова розстрочка </br> до 12 місяців!",
-            'text' => 'Оберіть найбільш зручний для вас варіант оплати'
+            'title' => "Сплатіть лише 30% вартості",
+            'subText' =>  'одразу, а решту — протягом 2 років.',
+            'text' => 'Житло, яке ви завжди хотіли,
+доступне вже сьогодні!'
         );
         extract($data);
         require('views/components/feedback.php');

@@ -25,7 +25,7 @@
                 </div>
                 <div class="footer__map-wrp">
                     <p class="footer__map-text">
-                        м. Южне,
+                        м. Південне,
                     </p>
                     <p class="footer__map-text">
                         вул. Приморська, 1

@@ -14,7 +14,7 @@
     },
     "dependencies": {
         "imask": "^7.6.1",
-        "swiper": "^11.1.4",
+        "swiper": "^11.2.8",
         "vite-plugin-inspect": "^0.8.4"
     }
 }

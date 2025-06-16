@@ -17,3 +17,7 @@ openForm();
 
 import { anchorScroll  } from "./global/anchorScroll";
 anchorScroll();
+
+import {slider} from "./components/slider";
+
+slider();

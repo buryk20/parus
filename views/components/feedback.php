@@ -4,6 +4,9 @@
             <h3 class="feedback__title">
                 <?php echo isset($title) ? htmlspecialchars_decode($title) : '<p> Ціни </p> від 760$ за м2!'; ?>
             </h3>
+            <h3 class="feedback__sub-text">
+                <?php echo isset($subText) ? htmlspecialchars_decode($subText) : 'одразу, а решту — протягом 2 років.'; ?>
+            </h3>
             <p class="feedback__sub-title">
                 <?php echo isset($text) ? htmlspecialchars_decode($text) : 'Це ваша можливість інвестувати в комфортне житло за доступною ціною'; ?>
             </p>

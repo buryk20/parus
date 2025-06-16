@@ -1,18 +1,18 @@
 {
   "public/img/feedbock-img.png": {
-    "file": "assets/feedbock-img-Cxn6tdZB.png",
+    "file": "assets/feedbock-img-BYb6UtZm.png",
     "src": "public/img/feedbock-img.png"
   },
   "src/js/index.js": {
-    "file": "assets/index-B4Xh5Xmv.js",
+    "file": "assets/index-BGyONH1b.js",
     "name": "index",
     "src": "src/js/index.js",
     "isEntry": true,
     "css": [
-      "assets/index-DBrBO7qF.css"
+      "assets/index-BSxlhf5t.css"
     ],
     "assets": [
-      "assets/feedbock-img-Cxn6tdZB.png"
+      "assets/feedbock-img-BYb6UtZm.png"
     ]
   }
 }

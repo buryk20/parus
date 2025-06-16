@@ -6,7 +6,7 @@
                     ЖК «Парус» –
                 </p>
                 <p>
-                    Ваш приватний острів біля моря в Южному!
+                    ваш приватний острів біля моря в місті Південне
                 </p>
 
             </h1>
@@ -26,6 +26,6 @@
         </div>
     </div>
     <div class="banner__img-wrp">
-        <img class="banner__img" src="/public/img/banner.png" alt="ЖК «Парус» – Ваш приватний острів біля моря в Южному!">
+        <img class="banner__img" src="/public/img/banner.jpg" alt="ЖК «Парус» – Ваш приватний острів біля моря в Южному!">
     </div>
 </div>

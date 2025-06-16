@@ -34,16 +34,42 @@
                 </li>
             </ul>
         </div>
-        <div class="why-choose__img-wrp">
-            <img class="why-choose__img" src="/public/img/why-choose-1.png" alt="Безпека на першому місці">
+        <div class="why-choose__img-wrp-title">
+            <img class="why-choose__img-title" src="/public/img/why-choose-1.png" alt="Безпека на першому місці">
         </div>
     </div>
     <div class="line__wrp">
         <span class="line"></span>
     </div>
     <div class="why-choose__img-left">
-        <div class="why-choose__img-wrp">
-            <img class="why-choose__img" src="/public/img/why-choose-2.png" alt="Комфорт кожного дня">
+        <div class="swiper why-choose__img-wrp">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="why-choose__img" src="/public/img/why-choose/item_6.jpg" alt="Комфорт щодня 6">
+                </div>
+                <div class="swiper-slide">
+                    <img class="why-choose__img" src="/public/img/why-choose/item_1.jpg" alt="Комфорт щодня 1">
+                </div>
+                <div class="swiper-slide">
+                    <img class="why-choose__img" src="/public/img/why-choose/item_2.jpg" alt="Комфорт щодня 2">
+                </div>
+                <div class="swiper-slide">
+                    <img class="why-choose__img" src="/public/img/why-choose/item_3.jpg" alt="Комфорт щодня 3">
+                </div>
+                <div class="swiper-slide">
+                    <img class="why-choose__img" src="/public/img/why-choose/item_4.jpg" alt="Комфорт щодня 4">
+                </div>
+                <div class="swiper-slide">
+                    <img class="why-choose__img" src="/public/img/why-choose/item_5.png" alt="Комфорт щодня 5">
+                </div>
+            </div>
+
+            <!-- Пагінація -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Кнопки навігації -->
+            <div class="swiper-button-prev">&#10094;</div>
+            <div class="swiper-button-next">&#10095;</div>
         </div>
         <div class="main-style-text">
             <h3 class="sub-title">
@@ -55,7 +81,7 @@
                         <strong>
                             Ідеальне розташування:
                         </strong>
-                        ЖК "Парус" знаходиться в центрі міста Южного, поруч з пляжем, парками, торговими центрами, школами та дитячими садками
+                        ЖК "Парус" знаходиться в центрі міста Південне, поруч з пляжем, парками, торговими центрами, школами та дитячими садками
                     </span>
                 </li>
                 <li>
@@ -113,8 +139,31 @@
             </p>
         </div>
         <div class="main-style-text">
-            <div class="why-choose__img-wrp">
-                <img class="why-choose__img" src="/public/img/why-choose-3.png" alt="Сучасні технології та якість, що витримує час">
+            <div class="swiper swiper-why-choose why-choose__img-wrp">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="why-choose__img" src="/public/img/why-choose/item_11.png" alt="Комфорт щодня 11">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="why-choose__img" src="/public/img/why-choose/item_7.jpg" alt="Комфорт щодня 7">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="why-choose__img" src="/public/img/why-choose/item_8.jpg" alt="Комфорт щодня 8">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="why-choose__img" src="/public/img/why-choose/item_9.jpg" alt="Комфорт щодня 9">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="why-choose__img" src="/public/img/why-choose/item_10.jpg" alt="Комфорт щодня 10">
+                    </div>
+                </div>
+
+                <!-- Пагінація -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Кнопки навігації -->
+                <div class="swiper-button-prev">&#10094;</div>
+                <div class="swiper-button-next">&#10095;</div>
             </div>
             <p class="why-choose__text-padding">
                 Монолітно-каркасна конструкція будинку гарантує міцність та довговічність, а панорамні вікна відкривають захоплюючі види на море.
