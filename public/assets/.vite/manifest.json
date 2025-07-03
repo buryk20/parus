@@ -4,12 +4,12 @@
     "src": "public/img/feedbock-img.png"
   },
   "src/js/index.js": {
-    "file": "assets/index-DaVJwjyF.js",
+    "file": "assets/index-6Zyvg87V.js",
     "name": "index",
     "src": "src/js/index.js",
     "isEntry": true,
     "css": [
-      "assets/index-DtDFa_oi.css"
+      "assets/index-sfbgR4-s.css"
     ],
     "assets": [
       "assets/feedbock-img-BYb6UtZm.png"
