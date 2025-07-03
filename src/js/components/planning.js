@@ -28,6 +28,6 @@ export let planning = function () {
         const isExpanded = listWrp.classList.contains('active');
         text.innerText = isExpanded
             ? 'Закрити проекти'
-            : 'Переглянути всI доступнi Планування';
+            : 'Більше планувань';
     });
 };

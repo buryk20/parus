@@ -63,7 +63,7 @@ $plans = array(
         </div>
     </div>
     <button data-planning-btn-open class="btn planning__btn-open">
-        <p data-planning-text>Переглянути всI доступнi Планування</p>
+        <p data-planning-text>Більше планувань</p>
         <img class="planning__btn-open-icon" src="/public/icon/arrow.svg" alt="Зателефонуйте +380 95 700 50 55">
     </button>
 </section>

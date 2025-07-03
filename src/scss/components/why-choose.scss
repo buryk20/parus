@@ -60,6 +60,10 @@
     gap: 40px;
     @extend %flexStartBetwin;
 
+    &:last-child > .main-style-text > .sub-title {
+      padding-top: 32px;
+    }
+
     @include w1076 {
       gap: 20px;
       flex-direction: column;

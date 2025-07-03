@@ -59,9 +59,9 @@
                 <div class="swiper-slide">
                     <img class="why-choose__img" src="/public/img/why-choose/item_4.jpg" alt="Комфорт щодня 4">
                 </div>
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                     <img class="why-choose__img" src="/public/img/why-choose/item_5.png" alt="Комфорт щодня 5">
-                </div>
+                </div> -->
             </div>
 
             <!-- Пагінація -->

@@ -1,3 +1,8 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/config/phone.php'; // путь от текущего файла
+?>
+
+
 <header data-header class="header">
     <div header-wrp class="header__wrp">
         <div class="header__menu">
@@ -38,7 +43,7 @@
                         <a data-anchor href="#advice">Консультація</a>
                     </li>
                 </ul>
-                <a class="header__nav-menu-tel btn" href="tel:+0800757807">0 800 757 807</a>
+                <a class="header__nav-menu-tel btn" href="tel:<?= $phoneHref ?>"><?= $phone ?></a>
                 <button class="header__nav-menu-btn-call btn-black">Замовити дзвiНок</button>
                 <p class="header__nav-menu-text">
                     Зателефонуйте нам зараз!
@@ -49,9 +54,9 @@
                 </p>
             </div>
         </div>
-        <a class="btn header__btn" href="tel:+0800757807">0 800 757 807</a>
-        <a class="header__mob-phone" href="tel:+0800757807">
-            <img src="/public/icon/phone.svg" alt="0 800 757 807">
+        <a class="btn header__btn" href="tel:<?= $phoneHref ?>"><?= $phone ?></a>
+        <a class="header__mob-phone" href="tel:<?= $phoneHref ?>">
+            <img src="/public/icon/phone.svg" alt="<?= $phone ?>">
         </a>
     </div>
 </header>
