@@ -143,6 +143,17 @@ $cssFile = isset($manifest['src/js/index.js']['css'][0]) ? $manifest['src/js/ind
             sn.parentNode.insertBefore(ctw, sn);
         })(document, window, 'script');
     </script>
+    <script type="text/javascript">
+        (function(d, w, s) {
+            var widgetHash = '9ytsc5m7iebba317dsw4',
+                gcw = d.createElement(s);
+            gcw.type = 'text/javascript';
+            gcw.async = true;
+            gcw.src = '//widgets.binotel.com/getcall/widgets/' + widgetHash + '.js';
+            var sn = d.getElementsByTagName(s)[0];
+            sn.parentNode.insertBefore(gcw, sn);
+        })(document, window, 'script');
+    </script>
 </body>
 
 </html>
