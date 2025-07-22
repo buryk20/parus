@@ -38,10 +38,10 @@ $cssFile = isset($manifest['src/js/index.js']['css'][0]) ? $manifest['src/js/ind
     <meta property="og:site_name" content="ЖК «Парус»" />
     <meta property="og:title" content="ЖК «Парус» – Ваш приватний острів біля моря в Южному" />
     <meta property="og:description" content="ЖК «Парус» – Ваш приватний острів біля моря в Южному! Ідеальне місце для комфортного життя з видом на море та розвиненою інфраструктурою." />
-    <meta property="og:image" content="https://parus.transmet.com.ua/public/img/logo-telegram.jpg">
+    <meta property="og:image" content="https://parus.in.ua/public/img/logo-telegram.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://parus.transmet.com.ua/">
+    <meta property="og:url" content="https://parus.in.ua/">
     <meta property="og:type" content="website">
     <!-- Google Tag Manager -->
     <script>
